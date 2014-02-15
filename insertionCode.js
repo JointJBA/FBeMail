@@ -37,8 +37,13 @@ function readXML() {
 	return entries;
 
 }
+
+function toggleDD() {
+
+}
+
 var parent = document.getElementById('jewelContainer');
-parent.innerHTML = "<div class='fbJewel' id='fbEmailJewel'> <a class='jewelButton' aria-labelledby='emailsCountWrapper' href='#'> </a> <div id='emailDropDown' style='background-color:#fff;border:1px solid #333;border-bottom:2px solid #293e6a;left:0;overflow-x:hidden; overflow-y: scroll;position:absolute;top:40px;width:330px;z-index:-1; left: -165px; height: auto; max-height: 320px;'> <div style='height: 20px; font-weight: bold; padding-right: 5px; padding-top: 5px'>Email</div> </div> </div>" + parent.innerHTML;
+parent.innerHTML = "<div class='fbJewel' id='fbEmailJewel'> <a class='jewelButton' aria-labelledby='emailsCountWrapper' href='#'> </a> <div style='background-color:#fff;border:1px solid #333;border-bottom:2px solid #293e6a;left:0;position:absolute;top:40px;width:330px;z-index:-1; left: -165px; height: auto; max-height: 340px;'> <div style='height: 20px; width: auto; font-weight: bold; padding-left: 5px; padding-top: 5px'>Email Inbox</div> <div id='emailDropDown' style='border-bottom:1px solid #293e6a;border-top:1px solid #293e6a;background-color:#fff;overflow-x:hidden; overflow-y: scroll;width:330px; height: auto; max-height: 320px;'> </div> <div style='height: 20px; width: auto; font-weight: bold; padding-left: 5px; padding-top: 5px'> <a>See All</a> </div> </div> </div>" + parent.innerHTML;
 var emails = readXML();
 var dd = document.getElementById('emailDropDown');
 if(emails.length > 0)
