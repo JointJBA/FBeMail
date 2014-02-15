@@ -1,33 +1,3 @@
-#fbEmailJewel a.jewelButton
-{
-background-image: url(http://s30.postimg.org/6pmhbz67h/insertion_Icon2.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: auto !important;
-}
-#fbEmailJewel a.jewelButton:active, #fbEmailJewel a.jewelButton:focus, #fbEmailJewel a.jewelButton:hover
-{
-background-image: url(http://s30.postimg.org/6pmhbz67h/insertion_Icon2.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: auto !important;
-}
-#fbEmailJewel.hasNew a.jewelButton
-{
-background-image: url(http://s30.postimg.org/6pmhbz67h/insertion_Icon2.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: auto !important;
-}
-#fbEmailJewel.openToggler a.jewelButton
-{
-    background-image: url(http://s30.postimg.org/6pmhbz67h/insertion_Icon2.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: auto !important;
-}
-.notifNegativeBase #fbEmailJewel.openToggler a.jewelButton
-{
-    background-image: url(http://s30.postimg.org/6pmhbz67h/insertion_Icon2.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: auto !important;
-}
 #fbEmailJewel #fbRequestsFlyout .hasPYMK, #fbEmailJewel #fbRequestsFlyout #fbRequestsJewelManualPager, #fbEmailJewel #fbRequestsFlyout #fbRequestsJewelLoading #fbRequestsJewelLoadingContent
 {
     border-bottom: 1px solid #ddd;
@@ -62,4 +32,18 @@ background-image: url(http://s30.postimg.org/6pmhbz67h/insertion_Icon2.png) !imp
 ._5bfg #jewelContainer #fbEmailJewel .beeperNub
 {
     right: 224px;
+}
+
+.semail
+{
+    height: 60px;
+	width: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+.semail:hover
+{
+   background-color: gray;
 }

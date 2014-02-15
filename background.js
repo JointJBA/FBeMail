@@ -39,5 +39,4 @@ function readXML() {
 	return entries;
 
 }
-
 readXML();
