@@ -1,5 +1,7 @@
-function login()
-{
+function login() {
+
+	alert("wtf");	
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
