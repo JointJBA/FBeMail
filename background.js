@@ -1,14 +1,15 @@
-//xml reader that returns javascript objects
+//XML reader that returns javascript "entry" objects for gmail input
 
 function entry(title,summary,link,modified,issued,id,name,email) {
-
-	this.title = title;
-	this.summary = summary;
-	this.modified = modified;
-	this.issued = issued;
-	this.id = id;
-	this.name = name;
+	
 	this.email = email;
+	this.name = name;
+	this.id = id;
+	this.issued = issued;
+	this.modified = modified;
+	this.link = link;
+	this.summary = summary;
+	this.title = title;
 
 }
 
@@ -27,6 +28,7 @@ function readXML() {
 		var ne = new entry();
 		ne.title = ent[i].getElementsByTagName("title")[0].innerHTML;
 		ne.summary = ent[i].getElementsByTagName("summary")[0].innerHTML;
+		ne.link = ent[i].getElementsByTagName("link")[0].getAttribute("href");
 		ne.modified = ent[i].getElementsByTagName("modified")[0].innerHTML;
 		ne.issued = ent[i].getElementsByTagName("issued")[0].innerHTML;
 		ne.id = ent[i].getElementsByTagName("id")[0].innerHTML;
@@ -34,8 +36,7 @@ function readXML() {
 		ne.email = ent[i].getElementsByTagName("email")[0].innerHTML;
 		entries.push(ne);
 	}
-	
-	console.log(entries);
+
 	return entries;
 
 }
