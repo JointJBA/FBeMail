@@ -1,0 +1,70 @@
+#fbEmailJewel a.jewelButton
+{
+    background-image: url(/rsrc.php/v2/yV/r/jd-buSAftlk.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -50px -156px;
+}
+#fbEmailJewel a.jewelButton:active, #fbEmailJewel a.jewelButton:focus, #fbEmailJewel a.jewelButton:hover
+{
+    background-image: url(/rsrc.php/v2/yV/r/jd-buSAftlk.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -75px -121px;
+}
+#fbEmailJewel.hasNew a.jewelButton
+{
+    background-image: url(/rsrc.php/v2/yV/r/jd-buSAftlk.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -156px;
+}
+#fbEmailJewel.openToggler a.jewelButton
+{
+    background-image: url(/rsrc.php/v2/yV/r/jd-buSAftlk.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-position: -25px -156px !important;
+}
+.notifNegativeBase #fbEmailJewel.openToggler a.jewelButton
+{
+    background-image: url(/rsrc.php/v2/yV/r/jd-buSAftlk.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-position: 0 -255px !important;
+}
+#fbEmailJewel #fbRequestsFlyout .hasPYMK, #fbEmailJewel #fbRequestsFlyout #fbRequestsJewelManualPager, #fbEmailJewel #fbRequestsFlyout #fbRequestsJewelLoading #fbRequestsJewelLoadingContent
+{
+    border-bottom: 1px solid #ddd;
+}
+#fbEmailJewel #fbRequestsFlyout #fbRequestsJewelManualPager a
+{
+    padding: 0;
+    line-height: 30px;
+}
+#fbEmailJewel #fbRequestsFlyout #fbRequestsJewelManualPager a:hover
+{
+    background-color: #fff;
+}
+#fbEmailJewel #fbRequestsFlyout #fbRequestsJewelManualPager img
+{
+    vertical-align: middle;
+}
+._5bfw #fbEmailJewel a.jewelButton, ._5bfw #fbEmailJewel a.jewelButton:focus, ._5bfw #fbEmailJewel a.jewelButton:hover, ._5bfw #fbEmailJewel a.jewelButton:active
+{
+    background-image: url(http://s10.postimg.org/tubutsj4l/insertion_Icon.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    !background-position: -2px -924px !important;
+}
+._5bfw #fbEmailJewel.hasNew a.jewelButton, ._5bfw .notifNegativeBase #fbEmailJewel.openToggler a.jewelButton, ._5bfw .notifNegativeBase #fbEmailJewel.openToggler a.jewelButton:hover
+{
+    background-image: url(/rsrc.php/v2/y_/r/0nvwqMyrGzr.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-position: -2px -889px !important;
+}
+._5bfg #jewelContainer #fbEmailJewel .beeperNub
+{
+    right: 224px;
+}

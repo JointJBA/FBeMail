@@ -1,0 +1,1 @@
+console.log(chrome.extension.getViews().length);
