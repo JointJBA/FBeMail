@@ -1,6 +1,8 @@
 function login() {
 
-	alert("wtf");	
+	var u = username.value;
+	var p = password.value;
+	alert (u+p);
 
 }
 
