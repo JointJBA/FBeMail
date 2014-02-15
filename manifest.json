@@ -10,7 +10,10 @@
       "js": ["insertionCode.js"]
     }
 	],
-  "permissions" : ["https://www.facebook.com/*"],
+  "permissions" : [
+  	"https://www.facebook.com/*",
+  	"https://mail.google.com/*"
+  ],
   "background" : {
   "scripts" : ["background.js"]
   },
