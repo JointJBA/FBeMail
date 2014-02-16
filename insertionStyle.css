@@ -38,12 +38,13 @@
 {
     height: 60px;
 	width: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 1px;
+	padding-top: 5px;
+	overflow: hidden;
 }
 
 .semail:hover
 {
-   background-color: gray;
+   background-color: #D8D8D8;
 }
