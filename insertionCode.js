@@ -47,13 +47,13 @@ var parent = document.getElementById('jewelContainer');
 parent.innerHTML = "<div class='fbJewel' id='fbEmailJewel'> <a class='jewelButton' id='emailButton' aria-labelledby='emailsCountWrapper' href='#'> </a><div style='background-color: red; height: 13px; width: auto; min-width: 11px; position: absolute; left: -1000000px; bottom: 18px; text-align: center; color: white' id='boxNumber'></div> <div style='background-color:#fff;border:1px solid #333;border-bottom:2px solid #293e6a;left:0;position:absolute;top:40px;width:330px;z-index:-1; left: -1000000px; height: auto; max-height: 370px;' id='emailContainer'> <div style='height: 20px; width: auto; font-weight: bold; padding-left: 5px; padding-top: 5px'>Email Inbox</div> <div id='emailDropDown' style='border-bottom:1px solid #293e6a;border-top:1px solid #293e6a;background-color:#fff;overflow-x:hidden; overflow-y: auto;width:330px; height: auto; max-height: 320px;'> </div> <div style='height: 20px; width: auto; font-weight: bold; padding-left: 5px; padding-top: 5px'><center><a href='https://mail.google.com/mail/u/0/#inbox' target='_blank'>See All</a><center> </div> </div> </div>" + parent.innerHTML;
 var dd = document.getElementById('emailDropDown'), ec = document.getElementById('emailContainer'), nbox = document.getElementById('boxNumber');
 var eb = document.getElementById('emailButton');
-shit = setInterval(function () {
+function al () {
     var emails = readXML();
     if (emails.length > 0) {
         dd.innerHTML = "<ul><hr/><li>";
     }
     for (var i = 0; i < emails.length; i++) {
-        dd.innerHTML = dd.innerHTML + "<li class='semail'><div style='height: 40px; width: 40px; float: left; background-color: rgb("+ random(0, 200) + "," + random(0, 200) + "," + random(0, 200)+"); margin: 7.5px; font-size: 30px; text-align: center; color: white'>"+emails[i].name.substring(0, 1).toUpperCase() +"</div><div style='float: left; width: 250px; height: 60px; overflow: hidden'><div style='font-weight: bolder'><a href='" + emails[i].link + "' target='_blank'>" + emails[i].name + "</a></div><div style='overflow: hidden;'>" + emails[i].title + "</div><div style='overflow: hidden; color: grey'>" + emails[i].summary + "</div></div><li><hr/>";
+        dd.innerHTML = dd.innerHTML + "<li class='semail'><div style='height: 40px; width: 40px; float: left; background-color: rgb("+ random(100, 255) + "," + random(100, 255) + "," + random(100, 200)+"); margin: 7.5px; font-size: 30px; text-align: center; color: white'>"+emails[i].name.substring(0, 1).toUpperCase() +"</div><div style='float: left; width: 250px; height: 60px; overflow: hidden'><div style='font-weight: bolder'><a href='" + emails[i].link + "' target='_blank'>" + emails[i].name + "</a></div><div style='overflow: hidden;'>" + emails[i].title + "</div><div style='overflow: hidden; color: grey'>" + emails[i].summary + "</div></div><li><hr/>";
     }
     if (emails.length > 0) {
         dd.innerHTML = dd.innerHTML + "</li></ul>";
@@ -64,7 +64,9 @@ shit = setInterval(function () {
         dd.innerHTML = "<ul><hr/><li><li class='semail'><div><div style='font-weight: bold'></div><div>No New Messages</div></div><li><hr/></li></ul>";
         nbox.style.left = "-100000px";
     }
-}, 30000);
+}
+al();
+shit = setInterval(al, 30000);
     var dcase = true;
 
 
